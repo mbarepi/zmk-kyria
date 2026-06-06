@@ -17,15 +17,6 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        encoder_map {
-            compatible = "zmk,encoder-map";
-            default_layer {
-                bindings = <
-                    &inc_dec_kp C_VOL_UP C_VOL_DN
-                    &inc_dec_kp PG_UP PG_DN
-                >;
-            };
-        };
 
         default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
