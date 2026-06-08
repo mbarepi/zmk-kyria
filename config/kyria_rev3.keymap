@@ -27,30 +27,48 @@
             bindings = <
             &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                  &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &mo 1 &kp LSHFT            &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
             >;
             sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp PG_UP PG_DN
+                &inc_dec_kp C_VOL_DN C_VOL_UP
+                &msc SCRL_DOWN SCRL_UP
             >;
         };
 
-        function_layer {
+        numeric_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   \  |
+            // |  TAB  |  F1 |  F2 |  F3  |  F4  |  F5  |                                          |  F6  |  F7   |  F8   |  F9  |   F10 |   '  |
+            // | SHIFT |  +  |  -  |  *   |  /   |  =   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+            //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
             bindings = <
-            &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-            &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                  &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &mo 2   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+            &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                             &kp N6 &kp N7  &kp N8   &kp N9 &kp N0  &kp BSLH
+            &kp TAB   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                             &kp F6 &kp F7  &kp F8   &kp F9 &kp F10 &kp SQT
+            &kp LSHFT &kp PLUS &kp MINUS &kp STAR &kp SLASH &kp EQUAL &mo 2 &kp LSHFT            &mo 2   &kp LSHFT &kp N  &kp M   &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
+            >;
+        sensor-bindings = <
+                &inc_dec_kp C_PM C_PP
+                &inc_dec_kp C_BRI_DN C_BRI_UP
             >;
         };
 
         symbol_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+            //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
             bindings = <
             &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                  &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
             &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &trans   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
+            >;
+        sensor-bindings = <
+                &inc_dec_kp RGB_BRD RGB_BRI
+                &inc_dec_kp RGB_EFR RGB_EFF
             >;
         };
     };
