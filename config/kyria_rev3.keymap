@@ -65,10 +65,6 @@
             &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &studio_unlock &kp LSHFT            &trans   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
             >;
-            sensor-bindings = <
-                &rgb_ug RGB_BRD RGB_BRI
-                &rgb_ug RGB_EFR RGB_EFF
-            >;
         };
     };
 };
