@@ -49,7 +49,6 @@
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
             >;
             sensor-bindings = <
-                &inc_dec_kp C_PM C_PP
                 &inc_dec_kp C_BRI_DN C_BRI_UP
             >;
         };
