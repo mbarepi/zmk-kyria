@@ -66,8 +66,8 @@
                                   &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
             >;
             sensor-bindings = <
-                &inc_dec_kp RGB_BRD RGB_BRI
-                &inc_dec_kp RGB_EFR RGB_EFF
+                &rgb_ug RGB_BRD RGB_BRI
+                &rgb_ug RGB_EFR RGB_EFF
             >;
         };
     };
